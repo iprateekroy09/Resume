@@ -3,39 +3,65 @@ body{
     margin: 0px;
     max-height: 100%;
     max-width: 100%;
-    font-family: 'Overpass';
     display: flex;
     font-size: 12px;
+    position: absolute;
 }
 .right{
+    position: relative;
     width: 240px;
     height: 1020px;
     background-color: #0A1D37;
     color: #F9F9F9;
 }
 .left{
+    position: relative;
     width: calc(100% - 240px);
     height: 1020px;
     color:black;
+    font-family: 'Overpass';
 }
 .margin1{
     margin-left: 7px;
 }
+
 .margin2{
     margin-left: 50px;
     margin-right: 50px;
 }
 .right .image{
+    position: relative;
     margin-top: 8px;
-    padding-right: 8px;
+    align-items: center;
+    padding: 4px;
     border-radius: 100%;
 }
-.right .name, .skills, .hobs, .cont{
+.right .name{
     font-family: 'Big Shoulders Display';
+    letter-spacing: 1px;
 }
-.skills, .hobs, .cont{
+.skills{
     margin-bottom: 0.5px;
     margin-top: 2px;
+    position: relative;
+}
+.table td{
+    font-family: 'Big Shoulders Display';
+    letter-spacing: 1px;
+    font-size: 14px;
+    
+}
+.title{
+    font-family: 'Big Shoulders Display';
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+.hobby{
+    font-family: 'Big Shoulders Display';
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-bottom: 4px;
 }
 .aside{
     line-height: 1px;
@@ -46,18 +72,25 @@ body{
     font-style: italic;
     color: #29627e;
 }
-.fas{
-    margin-left: 0;
-    font-size: 15px;
-    float: left;
+.contact .title{
+    letter-spacing: 1px;
+    font-family: 'Big Shoulders Display';
 }
-.margin2 .fa{
-   
-    height: 20px;
-    margin: 2px;
-    font-size: 18px;
+.contact{
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Big Shoulders Display';
+}
+.contact span .icon{
+display: block;
+cursor: pointer;
+}
+.container{
+    text-align: center;
+    justify-content: space-between;
 }
 .reachme{
+    position: relative;
     margin-left: 4px;
     height: 20px;
     margin-top: 60px;
